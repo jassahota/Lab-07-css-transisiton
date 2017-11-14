@@ -1,5 +1,5 @@
 figure {
-  width: 200px;
+  width: 700px;
   background: #aaa;
   border: 2px solid #999;
   overflow: hidden;
@@ -30,8 +30,20 @@ figcaption {
   height: 4em;
   line-height: 1.2em;
   padding: .25em;
-  transform: translateY(4em);
+  transform: translateY(6em);
   background: #fff;
+  /* background: rgba( 255, 255, 255, 0 ); */
+  opacity: 8;
+  transition: all .5s;
+}
+
+figcaptions {
+  box-sizing: border-box;
+  height: 4em;
+  line-height: 1.2em;
+  padding: .25em;
+  transform: translateY(4em);
+  background: green;
   /* background: rgba( 255, 255, 255, 0 ); */
   opacity: 0;
   transition: all .5s;
@@ -43,6 +55,13 @@ figcaption {
   above is then applied to `all` these hover styles, over 0.5 seconds.
 */
 figure:hover figcaption {
+  transform: translateY(0em);
+  /* background: rgba( 255, 255, 255, .78 ); */
+  opacity: .78;
+}
+
+
+figure:hover figcaptions {
   transform: translateY(0em);
   /* background: rgba( 255, 255, 255, .78 ); */
   opacity: .78;
